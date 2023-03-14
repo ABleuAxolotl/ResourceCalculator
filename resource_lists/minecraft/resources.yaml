@@ -6,9 +6,9 @@ authors:
 
 index_page_display_name: "Minecraft"
 
-game_version: Java 1.19
+game_version: Java 1.19.4
 
-banner_message: "Now updated to 1.19!"
+banner_message: "Now updated to 1.19.4!"
 
 recipe_types:
   Crafting: "Craft {IN_ITEMS} into {OUT_ITEM}"
@@ -29,12 +29,22 @@ requirement_groups:
   - Acacia Wood
   - Stripped Acacia Log
   - Stripped Acacia Wood
-
+  
+  Any Bamboo Block:
+  - Block of Bamboo
+  - Block of Stripped Bamboo
+  
   Any Birch Log:
   - Birch Log
   - Birch Wood
   - Stripped Birch Log
   - Stripped Birch Wood
+  
+  Any Cherry Log:
+  - Cherry Log
+  - Cherry Wood
+  - Stripped Cherry Log
+  - Stripped Cherry Wood
 
   Any Coal:
   - Charcoal
@@ -62,8 +72,12 @@ requirement_groups:
   - Oak Log
   - Acacia Log
   - Acacia Wood
+  - Block of Bamboo
+  - Block of Stripped Bamboo
   - Birch Log
   - Birch Wood
+  - Cherry Log
+  - Cherry Wood
   - Crimson Hyphae
   - Crimson Stem
   - Dark Oak Log
@@ -79,6 +93,8 @@ requirement_groups:
   - Stripped Acacia Wood
   - Stripped Birch Log
   - Stripped Birch Wood
+  - Stripped Cherry Log
+  - Stripped Cherry Wood
   - Stripped Crimson Hyphae
   - Stripped Crimson Stem
   - Stripped Dark Oak Log
@@ -100,8 +116,12 @@ requirement_groups:
   - Oak Log
   - Acacia Log
   - Acacia Wood
+  - Block of Bamboo
+  - Block of Stripped Bamboo
   - Birch Log
   - Birch Wood
+  - Cherry Log
+  - Cherry Wood
   - Dark Oak Log
   - Dark Oak Wood
   - Jungle Log
@@ -115,6 +135,8 @@ requirement_groups:
   - Stripped Acacia Wood
   - Stripped Birch Log
   - Stripped Birch Wood
+  - Stripped Cherry Log
+  - Stripped Cherry Wood
   - Stripped Dark Oak Log
   - Stripped Dark Oak Wood
   - Stripped Jungle Log
@@ -141,7 +163,9 @@ requirement_groups:
   Any Planks:
   - Oak Planks
   - Acacia Planks
+  - Bamboo Planks
   - Birch Planks
+  - Cherry Planks
   - Crimson Planks
   - Dark Oak Planks
   - Jungle Planks
@@ -184,7 +208,9 @@ requirement_groups:
   Any Slab:
   - Oak Slab
   - Acacia Slab
+  - Bamboo Slab
   - Birch Slab
+  - Cherry Slab
   - Crimson Slab
   - Dark Oak Slab
   - Jungle Slab
@@ -253,6 +279,12 @@ requirement_groups:
   - Sandstone
   - Chiseled Sandstone
   - Cut Sandstone
+  
+  Any Pottery Shard:
+  - Archer Pottery Shard
+  - Prize Pottery Shard
+  - Arms Up Pottery Shard
+  - Skull Pottery Shard
 
 
 stack_sizes:
@@ -9659,3 +9691,592 @@ resources:
   Verdant Froglight:
     recipes:
     - recipe_type: Raw Resource
+    
+  Pink Petals:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Cherry Leaves:
+    recipes:
+    - recipe_type: Raw Resource
+ 
+  Cherry Sapling:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Torchflower:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Suspicious Sand:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Skeleton Skull:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Wither Skeleton Skull:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Player Head:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Zombie Head:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Creeper Head:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Piglin Head:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Dragon Head:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Archer Pottery Shard:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Prize Pottery Shard:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Arms Up Pottery Shard:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Skull Pottery Shard:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Block of Bamboo:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Bamboo: -9
+    - recipe_type: Raw Resource
+
+  Block of Stripped Bamboo:
+    recipes:
+    - output: 1
+      recipe_type: Strip
+      requirements:
+        Block of Bamboo: -1
+    - recipe_type: Raw Resource
+
+  Bamboo Planks:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Any Bamboo Block: -1
+    - recipe_type: Raw Resource
+
+  Bamboo Stairs:
+    recipes:
+    - output: 4
+      recipe_type: Crafting
+      requirements:
+        Bamboo Planks: -6
+    - recipe_type: Raw Resource
+
+  Bamboo Slab:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Bamboo Planks: -3
+    - recipe_type: Raw Resource
+
+  Bamboo Fence:
+    recipes:
+    - output: 3
+      recipe_type: Crafting
+      requirements:
+        Stick: -2
+        Bamboo Planks: -4
+    - recipe_type: Raw Resource
+
+  Bamboo Fence Gate:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Stick: -4
+        Bamboo Planks: -2
+    - recipe_type: Raw Resource
+
+  Bamboo Door:
+    recipes:
+    - output: 3
+      recipe_type: Crafting
+      requirements:
+        Bamboo Planks: -6
+    - recipe_type: Raw Resource
+
+  Bamboo Trapdoor:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Bamboo Planks: -6
+    - recipe_type: Raw Resource
+
+  Bamboo Button:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Bamboo Planks: -1
+    - recipe_type: Raw Resource
+
+  Bamboo Pressure Plate:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Bamboo Planks: -2
+    - recipe_type: Raw Resource
+
+  Bamboo Sign:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Stick: -1
+        Bamboo Planks: -6
+    - recipe_type: Raw Resource
+
+  Bamboo Mosaic:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Bamboo Slab: -2
+    - recipe_type: Raw Resource
+
+  Bamboo Mosaic Stairs:
+    recipes:
+    - output: 4
+      recipe_type: Crafting
+      requirements:
+        Bamboo Mosaic: -6
+    - recipe_type: Raw Resource
+
+  Bamboo Mosaic Slab:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Bamboo Mosaic: -3
+    - recipe_type: Raw Resource
+
+  Cherry Log:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Cherry Wood:
+    recipes:
+    - output: 3
+      recipe_type: Crafting
+      requirements:
+        Cherry Log: -4
+    - recipe_type: Raw Resource
+
+  Stripped Cherry Log:
+    recipes:
+    - output: 1
+      recipe_type: Strip
+      requirements:
+        Cherry Log: -1
+    - recipe_type: Raw Resource
+
+  Stripped Cherry Wood:
+    recipes:
+    - output: 1
+      recipe_type: Strip
+      requirements:
+        Cherry Wood: -1
+    - recipe_type: Raw Resource
+
+  Cherry Planks:
+    recipes:
+    - output: 4
+      recipe_type: Crafting
+      requirements:
+        Any Cherry Log: -1
+    - recipe_type: Raw Resource
+
+  Cherry Stairs:
+    recipes:
+    - output: 4
+      recipe_type: Crafting
+      requirements:
+        Cherry Planks: -6
+    - recipe_type: Raw Resource
+
+  Cherry Slab:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Cherry Planks: -3
+    - recipe_type: Raw Resource
+
+  Cherry Fence:
+    recipes:
+    - output: 3
+      recipe_type: Crafting
+      requirements:
+        Stick: -2
+        Cherry Planks: -4
+    - recipe_type: Raw Resource
+
+  Cherry Fence Gate:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Stick: -4
+        Cherry Planks: -2
+    - recipe_type: Raw Resource
+
+  Cherry Door:
+    recipes:
+    - output: 3
+      recipe_type: Crafting
+      requirements:
+        Cherry Planks: -6
+    - recipe_type: Raw Resource
+
+  Cherry Trapdoor:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Cherry Planks: -6
+    - recipe_type: Raw Resource
+
+  Cherry Button:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Cherry Planks: -1
+    - recipe_type: Raw Resource
+
+  Cherry Pressure Plate:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Cherry Planks: -2
+    - recipe_type: Raw Resource
+
+  Cherry Sign:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Stick: -1
+        Cherry Planks: -6
+    - recipe_type: Raw Resource
+
+  Decorated Pot:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Any Pottery Shard: -4
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Any Pottery Shard: -2
+	      Brick: -2
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Any Pottery Shard: -3
+	      Brick: -1
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+	    Brick: -4
+    - recipe_type: Raw Resource
+
+  Oak Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Oak Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Spruce Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Spruce Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Birch Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Birch Oak Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Jungle Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Jungle Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Dark Oak Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Dark Oak Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Mangrove Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Mangrove Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Cherry Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Cherry Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Bamboo Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Block of Stripped Bamboo: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Crimson Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Crimson Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Warped Hanging Sign:
+    recipes:
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Stripped Warped Log: -6
+        Chain: -2
+    - recipe_type: Raw Resource
+
+  Bamboo Raft:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Bamboo Planks: -5
+    - recipe_type: Raw Resource
+
+  Bamboo Raft with Chest:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Bamboo Raft: -1
+        Chest: -1
+    - recipe_type: Raw Resource
+
+  Cherry Boat:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Cherry Planks: -5
+    - recipe_type: Raw Resource
+
+  Cherry Boat with Chest:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Cherry Boat: -1
+        Chest: -1
+    - recipe_type: Raw Resource
+
+  Brush:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Feather: -1
+        Copper Ingot: -1
+	Stick: -1
+    - recipe_type: Raw Resource
+
+  Bundle:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        String: -2
+        Rabbit Hide: -6
+    - recipe_type: Raw Resource
+
+  Netherite Upgrade:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Netherrack: -1
+	Netherite Upgrade: -1
+    - recipe_type: Raw Resource
+
+  Sentry Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Cobblestone: -1
+	Sentry Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Dune Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Sandstone: -1
+	Dune Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Coast Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Cobblestone: -1	
+ 	Coast Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Wild Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Mossy Cobblestone: -1
+	Wild Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Ward Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Cobbled Deepslate: -1
+	Ward Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Eye Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Endstone: -1
+	Eye Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Vex Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Cobblestone: -1
+	Vex Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Tide Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Prismarine: -1
+	Tide Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Snout Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Blackstone: -1
+	Snout Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Rib Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Netherrack: -1
+	Rib Armor Trim: -1
+    - recipe_type: Raw Resource
+
+  Spire Armor Trim:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Diamond: -7
+        Purpur Block: -1
+	Spire Armor Trim: -1
+    - recipe_type: Raw Resource
+
+
+
+
+
+    
