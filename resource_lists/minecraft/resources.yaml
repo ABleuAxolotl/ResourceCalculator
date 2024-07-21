@@ -3392,7 +3392,13 @@ resources:
     - output: 4
       recipe_type: Crafting
       requirements:
-        Any Coal: -1
+        Coal: -1
+        Stick: -1
+        Any Soul Fire Base Block: -1
+     - output: 4
+      recipe_type: Crafting
+      requirements:
+        Charcoal: -1
         Stick: -1
         Any Soul Fire Base Block: -1
     - recipe_type: Raw Resource
