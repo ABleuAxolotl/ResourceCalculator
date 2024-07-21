@@ -3096,7 +3096,12 @@ resources:
       recipe_type: Crafting
       requirements:
         Stick: -1
-        Any Coal: -1
+        Charcoal: -1 
+    - output: 4
+      recipe_type: Crafting
+      requirements:
+        Stick: -1
+        Coal: -1
     - recipe_type: Raw Resource
 
   End Rod:
